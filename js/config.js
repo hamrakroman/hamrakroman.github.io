@@ -4,6 +4,6 @@
    Until this is set, the form copies a brief and opens your LinkedIn. */
 window.SITE_CONFIG = {
   contactEmail: "",
-  linkedin: "https://www.linkedin.com/in/roman-hamr%C3%A1k",
+  linkedin: "https://sk.linkedin.com/in/roman-hamr%C3%A1k",
   substack: "https://romanhamrak.substack.com/",
 };

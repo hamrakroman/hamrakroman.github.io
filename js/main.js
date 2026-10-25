@@ -1,6 +1,6 @@
 (function () {
   const config = window.SITE_CONFIG || {};
-  const linkedin = config.linkedin || "https://www.linkedin.com/in/roman-hamr%C3%A1k";
+  const linkedin = config.linkedin || "https://sk.linkedin.com/in/roman-hamr%C3%A1k";
   const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   const en = {
