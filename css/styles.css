@@ -332,7 +332,7 @@ h2 {
   font-size: clamp(1.25rem, 2vw, 1.55rem);
   line-height: 1.35;
   letter-spacing: -0.02em;
-  max-width: 28ch;
+  max-width: 34ch;
 }
 
 .intro,

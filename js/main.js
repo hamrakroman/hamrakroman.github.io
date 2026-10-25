@@ -11,9 +11,9 @@
     "nav.writing": "Writing",
     "nav.contact": "Contact",
     "nav.cta": "Work together",
-    "hero.lede": "Raw events. Trusted models. Decisions that actually happen.",
+    "hero.lede": "I care about data quality. Speed comes from a team of AI agents I designed myself.",
     "hero.intro":
-      "I design the whole data path — from GA4 and server-side GTM to models in BigQuery and dbt. In-house for Profesia and Paylab, and on selected engagements for teams in Slovakia, the UK, the Netherlands and Germany.",
+      "The agents speed up preparation, checks and delivery. Measurement, server-side GTM, BigQuery and dbt stay my work. In-house for Profesia and Paylab, and on selected engagements in Slovakia, the UK, the Netherlands and Germany.",
     "hero.primary": "Start a project",
     "hero.f1": "years inside the data lifecycle",
     "hero.f2": "where the work actually is",
