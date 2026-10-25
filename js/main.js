@@ -237,34 +237,6 @@
   setInterval(paintClock, 30000);
   document.getElementById("year").textContent = String(new Date().getFullYear());
 
-  const query = [
-    "-- a model earns its keep when someone acts",
-    "select",
-    "  user_id,",
-    "  source,",
-    "  next_action",
-    "from ga4.events",
-    "join dbt.mart_users using (user_id)",
-    "where consent = 'granted'",
-    "  and owner is not null;",
-  ].join("\n");
-
-  const typed = document.getElementById("typed");
-  if (reduced) {
-    typed.textContent = query;
-  } else {
-    let index = 0;
-    const step = () => {
-      index += 1;
-      typed.textContent = query.slice(0, index);
-      if (index < query.length) {
-        const delay = query[index - 1] === "\n" ? 90 : 16 + Math.random() * 24;
-        window.setTimeout(step, delay);
-      }
-    };
-    window.setTimeout(step, 400);
-  }
-
   const canvas = document.getElementById("field");
   const context = canvas.getContext("2d");
   if (!reduced && context) {
