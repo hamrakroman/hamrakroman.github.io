@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Roman Hamrák — dátový analytik · GA4, BigQuery, dbt</title>
+    <meta
+      name="description"
+      content="Roman Hamrák je senior web a product analytik. GA4, server-side GTM, BigQuery a dbt — meranie, modely a rozhodnutia pre tímy na Slovensku, v UK, Holandsku a Nemecku."
+    />
+    <meta name="author" content="Roman Hamrák" />
+    <meta name="theme-color" content="#090b0e" />
+    <meta name="color-scheme" content="dark" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="sk_SK" />
+    <meta property="og:title" content="Roman Hamrák — dátový analytik" />
+    <meta
+      property="og:description"
+      content="GA4, server-side GTM, BigQuery a dbt. Od surového eventu po rozhodnutie, ktoré niekto naozaj urobí."
+    />
+    <meta
+      property="og:image"
+      content="https://substack-post-media.s3.amazonaws.com/public/images/febd2e95-9551-44ad-9012-0aae0bfb8fee_800x800.jpeg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,640&family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&family=Outfit:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Roman Hamrák",
+        "jobTitle": "Senior Web & Product Analyst",
+        "description": "Digital data analyst focused on GA4, server-side GTM, BigQuery, dbt and analytics automation.",
+        "image": "assets/roman-hamrak.jpg",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Bratislava",
+          "addressCountry": "SK"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/roman-hamr%C3%A1k",
+          "https://romanhamrak.substack.com/"
+        ],
+        "knowsAbout": [
+          "Google Analytics 4",
+          "Google Tag Manager",
+          "Server-side tagging",
+          "BigQuery",
+          "dbt",
+          "Looker Studio",
+          "Consent Mode",
+          "Make",
+          "n8n"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Preskočiť na obsah</a>
+    <canvas id="field" aria-hidden="true"></canvas>
+
+    <header class="nav" data-nav>
+      <div class="nav__inner">
+        <a class="mark" href="#top" aria-label="Roman Hamrák, začiatok stránky">
+          <span class="mark__box">RH</span>
+          <span class="mark__name">roman hamrák</span>
+        </a>
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu" data-i18n-aria="nav.menu">
+          <span></span><span></span>
+          Menu
+        </button>
+        <nav id="menu" class="menu" data-menu>
+          <a href="#about" data-i18n="nav.about">O mne</a>
+          <a href="#services" data-i18n="nav.services">Služby</a>
+          <a href="#work" data-i18n="nav.work">Spolupráce</a>
+          <a href="#writing" data-i18n="nav.writing">Články</a>
+          <a href="#contact" data-i18n="nav.contact">Kontakt</a>
+        </nav>
+        <div class="nav__tools">
+          <div class="lang" role="group" aria-label="Language">
+            <button type="button" data-lang="sk" aria-pressed="true">SK</button>
+            <button type="button" data-lang="en" aria-pressed="false">EN</button>
+          </div>
+          <a class="btn btn--small" href="#contact" data-i18n="nav.cta">Spolupráca</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="wrap hero__grid">
+          <div class="hero__copy">
+            <p class="kicker"><span>01</span> senior web &amp; product analyst</p>
+            <h1>Roman<br />Hamrák</h1>
+            <p class="lede" data-i18n="hero.lede">
+              Surové eventy. Spoľahlivé modely. Rozhodnutia, ktoré sa naozaj stanú.
+            </p>
+            <p class="intro" data-i18n="hero.intro">
+              Navrhujem celý tok dát — od GA4 a server-side GTM po modely v BigQuery a dbt. In-house pre Profesia a Paylab a vo vybraných spoluprácach pre tímy na Slovensku, v UK, Holandsku a Nemecku.
+            </p>
+            <div class="hero__actions">
+              <a class="btn" href="#contact" data-i18n="hero.primary">Dohodnúť spoluprácu</a>
+              <a class="btn btn--ghost" href="https://www.linkedin.com/in/roman-hamr%C3%A1k" target="_blank" rel="noopener noreferrer">
+                LinkedIn
+                <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M6 4h6v6" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+              </a>
+            </div>
+            <ul class="facts">
+              <li><strong>11+</strong> <span data-i18n="hero.f1">rokov v životnom cykle dát</span></li>
+              <li><strong>SK · UK · NL · DE</strong> <span data-i18n="hero.f2">klienti, s ktorými pracujem</span></li>
+              <li><strong data-i18n="hero.f3s">in-house + consulting</strong> <span data-i18n="hero.f3">Alma Career a vlastná prax</span></li>
+            </ul>
+          </div>
+
+          <div class="hero__stage">
+            <figure class="portrait">
+              <div class="portrait__bar">
+                <span>portrait.jpg</span>
+                <span data-clock>Bratislava</span>
+              </div>
+              <img
+                src="assets/roman-hamrak.jpg"
+                width="800"
+                height="800"
+                alt="Roman Hamrák"
+                data-i18n-alt="hero.alt"
+              />
+              <figcaption>
+                <span>Bratislava</span>
+                <span data-i18n="hero.caption">web · product · analytics</span>
+              </figcaption>
+            </figure>
+
+            <div class="terminal" aria-hidden="false">
+              <div class="terminal__bar">
+                <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                <span>decision.sql</span>
+                <span class="terminal__live">live</span>
+              </div>
+              <pre class="terminal__body"><code id="typed"></code><span class="caret" aria-hidden="true"></span></pre>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <p>GA4 · Google Tag Manager · Server-side GTM · BigQuery · dbt · Looker Studio · Cloud Run · App Engine · Consent Mode · CAPI · Measurement Protocol · Make · n8n ·</p>
+          <p>GA4 · Google Tag Manager · Server-side GTM · BigQuery · dbt · Looker Studio · Cloud Run · App Engine · Consent Mode · CAPI · Measurement Protocol · Make · n8n ·</p>
+        </div>
+      </div>
+
+      <section class="section" id="about">
+        <div class="wrap split">
+          <div>
+            <p class="kicker"><span>02</span> <span data-i18n="about.kicker">profil</span></p>
+            <h2 data-i18n="about.title">Meranie je len začiatok.</h2>
+          </div>
+          <div class="prose">
+            <p data-i18n="about.p1">
+              Som senior web a product analytik v Alma Career Slovakia. Starám sa o celý cyklus zberu, spracovania a reportingu pre Profesia a Paylab — GA4, Google Tag Manager, server-side GTM na Cloud Run alebo App Engine, Looker Studio a dotazy v BigQuery a dbt, ktoré staviame s DWH/BI tímom.
+            </p>
+            <p data-i18n="about.p2">
+              Popri tom beriem vybrané spolupráce. Cieľ je stále rovnaký: tím má mať kvalitné a dôveryhodné dáta čo najskôr. Model, ktorý nespustí rozhodnutie, je len pekná schéma.
+            </p>
+            <p data-i18n="about.p3">
+              CliftonStrengths, ktoré ma popisujú najpresnejšie: Learner, Ideation, Restorative, Achiever, Relator. Učím sa pre samotný proces, spájam veci, čo na prvý pohľad nesúvisia, a problémy radšej rozoberiem, než obídem.
+            </p>
+            <p class="prose__links">
+              <a href="https://www.linkedin.com/in/roman-hamr%C3%A1k" target="_blank" rel="noopener noreferrer" data-i18n="about.li">Profil na LinkedIne</a>
+              <a href="https://romanhamrak.substack.com/" target="_blank" rel="noopener noreferrer" data-i18n="about.sub">Píšem na Substacku</a>
+            </p>
+          </div>
+        </div>
+        <div class="wrap">
+          <dl class="strengths">
+            <div>
+              <dt>Learner</dt>
+              <dd data-i18n="about.s1">Proces učenia ma ťahá viac než diplom na konci.</dd>
+            </div>
+            <div>
+              <dt>Ideation</dt>
+              <dd data-i18n="about.s2">Hľadám súvislosti medzi vecami, ktoré vyzerajú oddelene.</dd>
+            </div>
+            <div>
+              <dt>Restorative</dt>
+              <dd data-i18n="about.s3">Najprv zistím, čo je pokazené, a potom to opravím.</dd>
+            </div>
+            <div>
+              <dt>Achiever</dt>
+              <dd data-i18n="about.s4">Baví ma práca, ktorá má tempo a viditeľný výsledok.</dd>
+            </div>
+            <div>
+              <dt>Relator</dt>
+              <dd data-i18n="about.s5">Najlepšie výsledky vznikajú s ľuďmi, ktorých poznám.</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="section" id="services">
+        <div class="wrap">
+          <p class="kicker"><span>03</span> <span data-i18n="services.kicker">čo spolu vieme postaviť</span></p>
+          <h2 data-i18n="services.title">Šesť miest, kde sa analytika zvykne rozbiť.</h2>
+          <ol class="services">
+            <li>
+              <span>01</span>
+              <h3 data-i18n="services.t1">Architektúra merania</h3>
+              <p data-i18n="services.d1">Návrh GA4 eventov, ktoré držia pokope produkt, marketing aj dátový sklad. Nie ďalší zoznam tagov.</p>
+            </li>
+            <li>
+              <span>02</span>
+              <h3 data-i18n="services.t2">Server-side tagging</h3>
+              <p data-i18n="services.d2">sGTM na Google Cloud, consent mode a CAPI pre Google Ads a Meta. Menej strát medzi prehliadačom a reklamným účtom.</p>
+            </li>
+            <li>
+              <span>03</span>
+              <h3 data-i18n="services.t3">BigQuery a dbt</h3>
+              <p data-i18n="services.d3">Modely nad raw exportom. Atribúcia, user_id, kvalita súhlasov — veci, ktoré rozhranie GA4 neukáže.</p>
+            </li>
+            <li>
+              <span>04</span>
+              <h3 data-i18n="services.t4">Audity kvality</h3>
+              <p data-i18n="services.d4">Chýbajúci GCLID, rozbité e-commerce eventy, consent, cross-device. Najprv diera, potom oprava.</p>
+            </li>
+            <li>
+              <span>05</span>
+              <h3 data-i18n="services.t5">Aktivácia</h3>
+              <p data-i18n="services.d5">Make a n8n. Insight, ktorý v pondelok ráno príde tam, kde sa rozhoduje — nie do dashboardu, ktorý nikto neotvorí.</p>
+            </li>
+            <li>
+              <span>06</span>
+              <h3 data-i18n="services.t6">Reporting</h3>
+              <p data-i18n="services.d6">Looker Studio a vrstva, ktorej rozumie aj človek, čo SQL nepíše. Čísla ostávajú naviazané na model pod nimi.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section" id="work">
+        <div class="wrap">
+          <p class="kicker"><span>04</span> <span data-i18n="work.kicker">vybrané spolupráce</span></p>
+          <h2 data-i18n="work.title">Konkrétny rozsah, nie zoznam log.</h2>
+          <p class="section__lead" data-i18n="work.lead">
+            Nezávislá prax od júna 2024. Nižšie je rozsah, ktorý verejne uvádzam — bez vymyslených percent.
+          </p>
+          <div class="cases">
+            <article>
+              <h3>Q-Park</h3>
+              <p data-i18n="work.c1">Priebežná podpora trackingu a custom JavaScript implementácie.</p>
+            </article>
+            <article>
+              <h3>Muziker</h3>
+              <p data-i18n="work.c2">Raw GA4 a Google Ads v BigQuery s DWH tímom, audit server-side GTM, CAPI a konzultácie.</p>
+            </article>
+            <article>
+              <h3>Luigi's Box</h3>
+              <p data-i18n="work.c3">Vlastný consent mode s interným vývojom, server-side GTM na Google Cloud a CAPI pre Google Ads a Facebook.</p>
+            </article>
+            <article>
+              <h3>Holland Casino</h3>
+              <p data-i18n="work.c4">Server-side GTM a consent mode.</p>
+            </article>
+            <article>
+              <h3>Basic-Fit</h3>
+              <p data-i18n="work.c5">E-commerce tracking, app tracking a veľká konsolidácia GTM.</p>
+            </article>
+            <article class="cases__more">
+              <h3 data-i18n="work.moreTitle">A ďalšie tímy</h3>
+              <p data-i18n="work.more">
+                Počas DASE, v medzinárodnom tíme s Maxlead a Morefire, som pracoval aj s Medirex, msg life, Martinus, Fitshaker, 365.bank, Dedoles, Tipos a Websupport.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--tight" id="path">
+        <div class="wrap">
+          <p class="kicker"><span>05</span> <span data-i18n="path.kicker">rola</span></p>
+          <h2 data-i18n="path.title">Kde práve som.</h2>
+          <ol class="timeline">
+            <li>
+              <time datetime="2023-10">2023.10 — <span data-i18n="path.now">súčasnosť</span></time>
+              <div>
+                <h3>Senior Web &amp; Product Analyst</h3>
+                <p class="where">Alma Career Slovakia · Bratislava</p>
+                <p data-i18n="path.p1">
+                  In-house analytika pre Profesia a Paylab. Eventová architektúra s produktom, BigQuery a dbt s DWH/BI tímom, server-side GTM na Google Cloud a Looker Studio. Aby mali tímy kvalitné dáta včas.
+                </p>
+              </div>
+            </li>
+            <li>
+              <time datetime="2024-06">2024.06 — <span data-i18n="path.now">súčasnosť</span></time>
+              <div>
+                <h3 data-i18n="path.r2">Nezávislá analytická prax</h3>
+                <p class="where" data-i18n="path.w2">GA4 · BigQuery · server-side GTM</p>
+                <p data-i18n="path.p2">
+                  Marketingová a produktová analytika pre lokálnych aj medzinárodných klientov. Meranie, ktoré sa dá obhájiť, a dáta, ktoré sa dajú spojiť s reklamou aj skladom.
+                </p>
+              </div>
+            </li>
+            <li>
+              <time datetime="2022-05/2024-01">2022.05 — 2024.01</time>
+              <div>
+                <h3>Web Analyst &amp; Consultant</h3>
+                <p class="where">DASE · Bratislava</p>
+                <p data-i18n="path.p3">
+                  Medzinárodný tím s Maxlead.nl a Morefire.de. Návrh GA4 eventov, pokročilé meranie, audity kvality, server-side tagging, Measurement Protocol, Google Cloud a BigQuery.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section" id="writing">
+        <div class="wrap writing__head">
+          <div>
+            <p class="kicker"><span>06</span> substack</p>
+            <h2 data-i18n="writing.title">Články z praxe, nie prehľad nástrojov.</h2>
+            <p class="section__lead" data-i18n="writing.lead">
+              Píšem o tom, čo rozhranie GA4 zatají. BigQuery, atribúcia, consent, dbt a automatizácie, ktoré donesú insight na miesto, kde sa rozhoduje.
+            </p>
+          </div>
+          <a class="btn btn--ghost" href="https://romanhamrak.substack.com/" target="_blank" rel="noopener noreferrer">
+            <span data-i18n="writing.all">Všetky články</span>
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M6 4h6v6" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+          </a>
+        </div>
+        <div class="wrap posts">
+          <a class="post post--lead" href="https://romanhamrak.substack.com/p/the-future-of-web-analytics-automated" target="_blank" rel="noopener noreferrer">
+            <div class="post__media">
+              <img src="https://substack-post-media.s3.amazonaws.com/public/images/67fa861b-025f-448e-a24d-897bbeca6dd8_1532x1138.png" alt="" loading="lazy" />
+            </div>
+            <p class="post__date" data-iso="2026-06-02">2. jún 2026</p>
+            <h3>The Future of Web Analytics: Automated workflows and AI agents + 5 ideas</h3>
+            <p>Over the past few years, our industry has undergone a significant technical transformation. We adopted SGTM to improve data quality and privacy, then embraced BigQuery.</p>
+            <span class="post__go" data-i18n="writing.read">Čítať</span>
+          </a>
+          <a class="post" href="https://romanhamrak.substack.com/p/from-raw-ga4-events-to-ai-insights" target="_blank" rel="noopener noreferrer">
+            <div class="post__media">
+              <img src="https://substack-post-media.s3.amazonaws.com/public/images/c9e397a2-4679-46c1-9245-36c00dece0aa_2076x1020.png" alt="" loading="lazy" />
+            </div>
+            <p class="post__date" data-iso="2026-02-20">20. feb 2026</p>
+            <h3>From Raw GA4 Events to AI Insights in Slack — With DBT, BigQuery, and MAKE</h3>
+            <p>Most analytics teams are drowning in dashboards nobody opens on Monday morning.</p>
+            <span class="post__go" data-i18n="writing.read">Čítať</span>
+          </a>
+          <a class="post" href="https://romanhamrak.substack.com/p/ga4-bigquery-crm-oms-advanced-rfm" target="_blank" rel="noopener noreferrer">
+            <div class="post__media">
+              <img src="https://substack-post-media.s3.amazonaws.com/public/images/95cd362b-a111-4e29-9cc6-f2e845e4aedb_1541x1011.png" alt="" loading="lazy" />
+            </div>
+            <p class="post__date" data-iso="2025-10-06">6. okt 2025</p>
+            <h3>GA4 BigQuery + CRM + OMS = Advanced RFM Segmentation Use Cases</h3>
+            <p>The real magic happens when you merge behavioral analytics with transactions and CRM.</p>
+            <span class="post__go" data-i18n="writing.read">Čítať</span>
+          </a>
+          <a class="post" href="https://romanhamrak.substack.com/p/ga4-bigquery-how-google-sign-in-skews" target="_blank" rel="noopener noreferrer">
+            <p class="post__date" data-iso="2025-09-02">2. sep 2025</p>
+            <h3>How Google Sign-In Skews Attribution by Misclassifying Traffic as Direct</h3>
+            <p>A case study on paid traffic mislabeled as Direct. The GA4 interface cannot show it. BigQuery can.</p>
+            <span class="post__go" data-i18n="writing.read">Čítať</span>
+          </a>
+          <a class="post" href="https://romanhamrak.substack.com/p/ga4-bigquery-how-many-purchases-slip" target="_blank" rel="noopener noreferrer">
+            <p class="post__date" data-iso="2025-06-23">23. jún 2025</p>
+            <h3>How Many Purchases Slip Through Without a Logged-In User or Consent?</h3>
+            <p>A quick audit of the share of events that actually carry consent and a user_id.</p>
+            <span class="post__go" data-i18n="writing.read">Čítať</span>
+          </a>
+          <a class="post" href="https://romanhamrak.substack.com/p/advanced-performance-marketing-analytics" target="_blank" rel="noopener noreferrer">
+            <p class="post__date" data-iso="2025-01-07">7. jan 2025</p>
+            <h3>Advanced performance marketing analytics is essential for budget efficiency</h3>
+            <p>Attribution models and user segmentation, written for people who own the budget.</p>
+            <span class="post__go" data-i18n="writing.read">Čítať</span>
+          </a>
+          <a class="post" href="https://romanhamrak.substack.com/p/tipy-pre-pokrocilu-webovu-analytiku" target="_blank" rel="noopener noreferrer">
+            <p class="post__date" data-iso="2024-10-29">29. okt 2024</p>
+            <h3>Tipy pre pokročilú webovú analytiku</h3>
+            <p>Server-side GTM má dnes väčšina webov. Tento text je o témach, ktoré sú menej viditeľné a často dôležitejšie.</p>
+            <span class="post__go" data-i18n="writing.read">Čítať</span>
+          </a>
+          <a class="post" href="https://romanhamrak.substack.com/p/analysis-missing-google-click-identifier" target="_blank" rel="noopener noreferrer">
+            <p class="post__date" data-iso="2024-10-27">27. okt 2024</p>
+            <h3>Analysis: Missing Google Click Identifier (GCLID) in GA4 BigQuery</h3>
+            <p>GCLID is how GA4 joins to Google Ads. Sometimes it is missing, and the usual page_location fix does not help.</p>
+            <span class="post__go" data-i18n="writing.read">Čítať</span>
+          </a>
+          <a class="post" href="https://romanhamrak.substack.com/p/ga4-bigquery-mastering-event-data" target="_blank" rel="noopener noreferrer">
+            <p class="post__date" data-iso="2024-08-22">22. aug 2024</p>
+            <h3>GA4 BigQuery: Mastering event data testing</h3>
+            <p>Missing or incorrect data, cross-device tracking, and advanced consent mode behaviour.</p>
+            <span class="post__go" data-i18n="writing.read">Čítať</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="wrap contact">
+          <div>
+            <p class="kicker"><span>07</span> <span data-i18n="contact.kicker">spolupráca</span></p>
+            <h2 data-i18n="contact.title">Napíš, čo ťa na dátach trápi.</h2>
+            <p class="section__lead" data-i18n="contact.lead">
+              Audit, server-side meranie, BigQuery alebo model, ktorý má niekto v pondelok použiť. Odpoviem konkrétne, nie šablónou ponuky.
+            </p>
+            <ul class="contact__links">
+              <li>
+                <a href="https://www.linkedin.com/in/roman-hamr%C3%A1k" target="_blank" rel="noopener noreferrer">
+                  <span>LinkedIn</span>
+                  <strong>roman-hamrák</strong>
+                </a>
+              </li>
+              <li>
+                <a href="https://romanhamrak.substack.com/" target="_blank" rel="noopener noreferrer">
+                  <span>Substack</span>
+                  <strong>romanhamrak.substack.com</strong>
+                </a>
+              </li>
+              <li>
+                <span class="static-link">
+                  <span data-i18n="contact.base">Základňa</span>
+                  <strong>Bratislava, Slovensko</strong>
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          <form class="form" id="lead" novalidate>
+            <div class="form__row">
+              <label>
+                <span data-i18n="form.name">Meno</span>
+                <input name="name" type="text" autocomplete="name" required data-i18n-placeholder="form.namePh" placeholder="Anna Nováková" />
+              </label>
+              <label>
+                <span data-i18n="form.email">E-mail</span>
+                <input name="email" type="email" autocomplete="email" required data-i18n-placeholder="form.emailPh" placeholder="anna@firma.sk" />
+              </label>
+            </div>
+            <div class="form__row">
+              <label>
+                <span data-i18n="form.company">Firma</span>
+                <input name="company" type="text" autocomplete="organization" data-i18n-placeholder="form.companyPh" placeholder="Názov firmy" />
+              </label>
+              <label>
+                <span data-i18n="form.need">Čo riešiš</span>
+                <select name="need" required>
+                  <option value="" data-i18n="form.need0">Vyber tému</option>
+                  <option data-i18n="form.need1">Audit merania / GA4</option>
+                  <option data-i18n="form.need2">Server-side GTM a consent</option>
+                  <option data-i18n="form.need3">BigQuery / dbt</option>
+                  <option data-i18n="form.need4">CAPI a dáta z reklamy</option>
+                  <option data-i18n="form.need5">Automatizácia (Make, n8n)</option>
+                  <option data-i18n="form.need6">Niečo iné</option>
+                </select>
+              </label>
+            </div>
+            <label>
+              <span data-i18n="form.web">Web</span>
+              <input name="website" type="url" inputmode="url" data-i18n-placeholder="form.webPh" placeholder="https://" />
+            </label>
+            <label>
+              <span data-i18n="form.message">Správa</span>
+              <textarea name="message" rows="5" required data-i18n-placeholder="form.messagePh" placeholder="Čo dnes meriate, čomu neveríte a čo by sa malo zmeniť."></textarea>
+            </label>
+            <div class="hp" aria-hidden="true">
+              <label>
+                Company site
+                <input type="text" name="_honey" tabindex="-1" autocomplete="off" />
+              </label>
+            </div>
+            <p class="form__hint" id="form-hint" data-i18n="form.hint">
+              Po odoslaní sa otvorí môj LinkedIn a zhrnutie sa skopíruje do schránky. Vlož ho do správy — ozvem sa.
+            </p>
+            <div class="form__bar">
+              <button class="btn" type="submit" data-i18n="form.submit">Odoslať dopyt</button>
+              <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <div class="wrap foot__inner">
+        <p>© <span id="year">2026</span> Roman Hamrák · Bratislava</p>
+        <p class="foot__meta">utf-8 · ga4 · bigquery · dbt</p>
+        <p class="foot__links">
+          <a href="https://www.linkedin.com/in/roman-hamr%C3%A1k" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://romanhamrak.substack.com/" target="_blank" rel="noopener noreferrer">Substack</a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/config.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
