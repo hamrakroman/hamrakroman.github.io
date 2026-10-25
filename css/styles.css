@@ -402,35 +402,17 @@ h2 {
 }
 
 .portrait::before {
-  top: 2.4rem;
-  left: 0.7rem;
+  top: 0.75rem;
+  left: 0.75rem;
   border-top: 1.5px solid var(--lime);
   border-left: 1.5px solid var(--lime);
 }
 
 .portrait::after {
-  right: 0.7rem;
-  bottom: 2.6rem;
+  right: 0.75rem;
+  bottom: 0.75rem;
   border-right: 1.5px solid var(--lime);
   border-bottom: 1.5px solid var(--lime);
-}
-
-.portrait__bar,
-.portrait figcaption {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  align-items: center;
-  font-family: var(--mono);
-  font-size: 0.72rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--dim);
-}
-
-.portrait__bar {
-  padding: 0.7rem 0.9rem;
-  border-bottom: 1px solid var(--line);
 }
 
 .portrait img {
@@ -440,11 +422,6 @@ h2 {
   max-height: 520px;
   object-fit: cover;
   object-position: center 42%;
-}
-
-.portrait figcaption {
-  padding: 0.7rem 0.9rem;
-  border-top: 1px solid var(--line);
 }
 
 .marquee {

@@ -19,7 +19,6 @@
     "hero.f2": "where the work actually is",
     "hero.f3s": "in-house + consulting",
     "hero.f3": "Alma Career and an independent practice",
-    "hero.caption": "web · product · analytics",
     "hero.alt": "Roman Hamrák, data analyst",
     "about.kicker": "profile",
     "about.title": "Measurement is only the start.",
@@ -223,18 +222,6 @@
     sections.forEach((section) => spy.observe(section));
   }
 
-  const clock = document.querySelector("[data-clock]");
-  const paintClock = () => {
-    const time = new Intl.DateTimeFormat("en-GB", {
-      hour: "2-digit",
-      minute: "2-digit",
-      hourCycle: "h23",
-      timeZone: "Europe/Bratislava",
-    }).format(new Date());
-    clock.textContent = "Bratislava  " + time;
-  };
-  paintClock();
-  setInterval(paintClock, 30000);
   document.getElementById("year").textContent = String(new Date().getFullYear());
 
   const canvas = document.getElementById("field");
