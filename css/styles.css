@@ -6,7 +6,7 @@
   --text: #f4f0e8;
   --muted: #b7b1a6;
   --dim: #8c867c;
-  --lime: #d6ff4a;
+  --lime: #ff7a18;
   --cyan: #9be7ff;
   --serif: "Fraunces", "Times New Roman", serif;
   --sans: "Outfit", "Segoe UI", sans-serif;
@@ -35,7 +35,7 @@ body {
   overflow-x: hidden;
   line-height: 1.6;
   background:
-    radial-gradient(900px 520px at 88% -10%, rgba(214, 255, 74, 0.16), transparent 60%),
+    radial-gradient(900px 520px at 88% -10%, rgba(255, 122, 24, 0.2), transparent 60%),
     radial-gradient(700px 480px at -10% 18%, rgba(155, 231, 255, 0.1), transparent 55%),
     var(--bg);
 }
@@ -255,7 +255,7 @@ main,
 
 .btn:hover {
   transform: translateY(-1px);
-  background: #e7ff8a;
+  background: #ff9340;
 }
 
 .btn--ghost {
@@ -440,7 +440,7 @@ h2 {
   aspect-ratio: 1;
   max-height: 520px;
   object-fit: cover;
-  object-position: center 20%;
+  object-position: center 42%;
 }
 
 .portrait figcaption {
@@ -677,7 +677,7 @@ section[id] {
 
 .cases__more {
   background:
-    linear-gradient(180deg, rgba(214, 255, 74, 0.08), transparent 50%),
+    linear-gradient(180deg, rgba(255, 122, 24, 0.12), transparent 50%),
     var(--bg-raise);
 }
 

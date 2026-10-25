@@ -316,7 +316,7 @@
           const b = points[j];
           const distance = Math.hypot(a.x - b.x, a.y - b.y);
           if (distance < 150) {
-            context.strokeStyle = "rgba(214, 255, 74," + (1 - distance / 150) * 0.28 + ")";
+            context.strokeStyle = "rgba(255, 122, 24," + (1 - distance / 150) * 0.32 + ")";
             context.lineWidth = 1;
             context.beginPath();
             context.moveTo(a.x, a.y);
@@ -326,7 +326,7 @@
         }
       }
 
-      context.fillStyle = "rgba(214, 255, 74, 0.75)";
+      context.fillStyle = "rgba(255, 122, 24, 0.85)";
       points.forEach((point) => {
         context.beginPath();
         context.arc(point.x, point.y, 1.4, 0, Math.PI * 2);
