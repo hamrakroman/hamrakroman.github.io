@@ -11,9 +11,9 @@
     "nav.writing": "Writing",
     "nav.contact": "Contact",
     "nav.cta": "Work together",
-    "hero.lede": "I care about data quality. Speed comes from a team of AI agents I designed myself.",
+    "hero.lede": "The data has to add up. For routine work I use AI agents I built myself.",
     "hero.intro":
-      "The agents speed up preparation, checks and delivery. Measurement, server-side GTM, BigQuery and dbt stay my work. In-house for Profesia and Paylab, and on selected engagements in Slovakia, the UK, the Netherlands and Germany.",
+      "I do the measurement, server-side GTM, BigQuery and dbt myself. The agents save me time on prep and checks. I work in-house at Profesia and Paylab, and take on the occasional client in Slovakia, the UK, the Netherlands and Germany.",
     "hero.primary": "Start a project",
     "hero.f1": "years inside the data lifecycle",
     "hero.f2": "where the work actually is",
